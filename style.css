@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.red_strip {
+    width: 95vw;
+    height: 35vh;
+    margin-top: 180px;
+    position: absolute;
+}
+
+.image1 {
+    /* right: 7%; */
+    left: 20vw;
+    z-index: 1;
+}
+
+.image1 img {
+    width: 70vw;
+}
+
+.slider_container {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 40%;
+    left: 11%;
+    z-index: 2;
+    width: 25%;
+}
+
+.first_container {
+    height: 115vh;
+    position: relative;
+    background-color: rgb(224, 222, 222);
+}
+
+.second_section {
+    /* border: 2px solid red; */
+    background-color: rgb(224, 222, 222);
+    /* height: 140vh; */
+    position: relative;
+    overflow: hidden;
+}
+
+.card .img {
+    background: rgb(224, 222, 222);
+    clip-path: circle(20.2% at 50% 50%);
+}
+
+.red_second_strip {
+    height: 70%;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+}
+
+.over_baseline {
+    transform: translate(0px, -80px);
+}
+
+.info {
+    width: 45%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    z-index: 6;
+}
+
+.info_card_responsive {
+    margin-bottom: 200px;
+}
+
+.card-img-top {
+    clip-path: circle(28.0% at 50% 50%);
+}
+
+@media only screen and (max-width: 1150px) {
+    .slider_container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .slider_container {
+        top: 20%;
+    }
+    .first_container {
+        height: 72vh;
+    }
+}
+
+@media only screen and (max-width: 636px) {
+    .slider_container {
+        width: 85%;
+        left: 7%;
+    }
+    .image1 img {
+        width: 100vw;
+    }
+    .image1 {
+        left: auto;
+    }
+    .red_strip {
+        width: 100vw;
+        height: 80vh;
+        margin-top: 100px;
+    }
+    .info_card_responsive {
+        margin-bottom: 380px;
+    }
+    .info {
+        width: 65%;
+        top: 100%;
+        left: auto;
+    }
+}
+
+@media only screen and (max-width: 386px) {
+    .slider_container {
+        width: 100%;
+        left: auto;
+    }
+    .info {
+        width: 95%;
+        left: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 567px) {
+    .responsive_query svg {
+        width: 60px;
+        height: 120px;
+    }
+}
